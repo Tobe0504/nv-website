@@ -1,0 +1,43 @@
+.container {
+  min-height: calc(100vh - 98px);
+  background: url("/public/Assets/heroBg.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 119px;
+}
+
+.upperSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.upperSection > div > h4 {
+  font-family: Lato;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 115.2px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.upperSection > div > p {
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 275;
+  line-height: 28.18px;
+  text-align: left;
+  color: #ebebeb;
+}
+
+.upperSection > button {
+  width: 420px;
+  padding: 20px 60px 20px 60px;
+  border-radius: 39.3px;
+}
+
+.bottomSection > img {
+  width: 100%;
+}

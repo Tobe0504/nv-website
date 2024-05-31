@@ -1,0 +1,64 @@
+.container {
+  background: #011304;
+  padding: 96px 126px;
+}
+
+.upperSection {
+  text-align: center;
+}
+
+.upperSection > h1 {
+  font-family: Lato;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 115.2px;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.upperSection > button {
+  margin-top: 2rem;
+  width: 399.89px;
+  margin: auto;
+  padding: 28.09px 84.27px 28.09px 84.27px;
+  border-radius: 56px;
+}
+
+.bottomSection {
+  display: flex;
+  align-items: flex-start;
+  gap: 132px;
+  justify-content: space-between;
+  margin-top: 130px;
+}
+
+.bottomSection > div {
+  flex: 1;
+  color: #ffffff;
+}
+
+.bottomSection > img {
+  flex: 1;
+  max-width: 135.57px;
+}
+
+.bottomSection > div > h4 {
+  font-family: Lato;
+  font-size: 20.78px;
+  font-weight: 700;
+  line-height: 24.93px;
+  text-align: left;
+}
+
+.bottomSection > div > p,
+.bottomSection > div > a {
+  font-family: Raleway;
+  font-size: 17.81px;
+  font-weight: 300;
+  line-height: 20.91px;
+  text-align: left;
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  display: block;
+}

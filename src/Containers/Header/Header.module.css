@@ -1,0 +1,39 @@
+.container {
+  border: 2px solid red;
+  height: 98px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 2rem;
+  padding: 1rem 128px;
+  background: #ffffff;
+}
+
+.container > a {
+  font-family: "Lato";
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28.8px;
+  text-align: left;
+  color: #2d2d2ddd;
+  text-decoration: none;
+}
+
+.container > div {
+  background: #1a171712;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.container > a:nth-child(2) {
+  margin-left: auto;
+}
+
+.container > button {
+  width: 310px;
+}
