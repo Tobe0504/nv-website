@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 96px 128px;
+}
+
+.container > div {
+  flex-basis: 48%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  max-width: 620px;
+  min-height: 441px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Lato;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

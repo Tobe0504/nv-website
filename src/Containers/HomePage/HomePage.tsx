@@ -1,13 +1,22 @@
 import Layout from "../../Components/Layout/Layout";
+import HomePageBecomeAVolunteer from "../HomePageBecomeAVolunteer/HomePageBecomeAVolunteer";
+import HomePageFaqs from "../HomePageFaqs/HomePageFaqs";
 import HomePageHeroSection from "../HomePageHeroSection/HomePageHeroSection";
-import classes from "./HomePage.module.css";
+import HomePageImpactWithOthers from "../HomePageImpactWithOthers/HomePageImpactWithOthers";
+import HomePageMeasureYourImpact from "../HomePageMeasureYourImpact/HomePageMeasureYourImpact";
+import HomepageStates from "../HomepageStates/HomepageStates";
+import HomePageTheVolunteers from "../HomePageTheVolunteers/HomePageTheVolunteers";
 
 const HomePage = () => {
   return (
     <Layout>
-      <>
-        <HomePageHeroSection />
-      </>
+      <HomePageHeroSection />
+      <HomePageBecomeAVolunteer />
+      <HomePageMeasureYourImpact />
+      <HomepageStates />
+      <HomePageImpactWithOthers />
+      <HomePageTheVolunteers />
+      <HomePageFaqs />
     </Layout>
   );
 };

@@ -1,0 +1,29 @@
+.container {
+  background: #000;
+  padding: 90px 235px;
+  background: url("/public/Assets/prohectPageHeader.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container > h4 {
+  color: #fff;
+  text-align: center;
+  font-family: Lato;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.container > p {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 5rem;
+  text-align: center;
+}

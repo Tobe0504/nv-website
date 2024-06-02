@@ -1,0 +1,64 @@
+.container {
+  padding: 72px 120px;
+  background: #08841b14;
+}
+
+.upperSection {
+  display: flex;
+  align-items: center;
+}
+
+.upperSection > div {
+  flex-basis: 60%;
+}
+
+.upperSection > p {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30.91px;
+  text-align: right;
+  flex-basis: 40%;
+}
+
+.lowerSection {
+  margin-top: 90px;
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.lowerSection > div {
+  border: 1px solid #000000;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.lowerSection > div:nth-child(1) {
+  align-items: center;
+  max-width: 543px;
+  height: 604px;
+  padding: 1rem;
+}
+
+.lowerSection > div:nth-child(2) {
+  background: #ffffff;
+  border: 1px solid #000000;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: justified;
+  color: #000000;
+  flex-direction: column;
+  padding: 1rem 4rem;
+}
+
+.lowerSection > div:nth-child(2) > p {
+  margin-bottom: 2rem;
+}
+
+.lowerSection > div:nth-child(2) > button {
+  width: 267px;
+}

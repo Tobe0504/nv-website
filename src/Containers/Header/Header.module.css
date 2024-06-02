@@ -1,5 +1,4 @@
 .container {
-  border: 2px solid red;
   height: 98px;
   display: flex;
   align-items: center;
@@ -9,7 +8,14 @@
   background: #ffffff;
 }
 
-.container > a {
+.container > img {
+  cursor: pointer;
+  width: 184px;
+  height: 61px;
+  flex-shrink: 0;
+}
+
+.container > a:not(.active) {
   font-family: "Lato";
   font-size: 24px;
   font-weight: 300;
@@ -36,4 +42,14 @@
 
 .container > button {
   width: 310px;
+}
+
+.active {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  text-align: left;
+  color: #2d2d2d;
+  text-decoration: none;
 }

@@ -1,13 +1,37 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Button from "../../Components/Button/Button";
 import classes from "./Header.module.css";
 
 const Header = () => {
+  const routes = [
+    { title: "About", route: "/about" },
+    { title: "Projects", route: "/projects" },
+  ];
+
+  // Routeer
+  const location = useLocation();
+  const navigate = useNavigate();
+
   return (
     <div className={classes.container}>
-      <img src="/Assets/logo.svg" alt="NV Logo" />
-      <Link to="/about">About</Link>
-      <Link to="/projects">Projects</Link>
+      <img
+        src="/Assets/logo.svg"
+        alt="NV Logo"
+        onClick={() => [navigate("/")]}
+      />
+      {routes.map((data, i) => {
+        return (
+          <Link
+            to={data.route}
+            className={
+              location.pathname === data.route ? classes.active : undefined
+            }
+            key={i}
+          >
+            {data.title}
+          </Link>
+        );
+      })}
       <div>
         <svg
           width="23"

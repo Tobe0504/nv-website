@@ -1,0 +1,129 @@
+.container {
+  padding: 72px 0;
+  background: #121217;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 120px;
+}
+
+.header > div,
+.header > p {
+  flex-basis: 50%;
+}
+
+.header > div:nth-child(1) > h4 {
+  color: #fff;
+}
+
+.header > div:nth-child(1) > p {
+  color: #fff;
+}
+
+.header > p {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: right;
+  color: #acacac;
+}
+
+.citySection {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.citySection:nth-child(2) {
+  margin-top: 96px;
+  animation: scrollInfinity 30s linear infinite;
+}
+
+.citySection:nth-child(3) {
+  margin-left: calc(-100% - 100vw);
+  animation: scrollInfinity2 40s linear infinite;
+}
+
+.city {
+  width: 217.61px;
+  flex-basis: 218px;
+  flex-shrink: 0;
+  height: 217.61px;
+  border-radius: 12.26px;
+  padding: 12px;
+  border: 0.77px solid #ffffff;
+  cursor: pointer;
+}
+
+.city > div {
+  border-radius: 12.26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-family: Lato;
+  font-size: 24.52px;
+  font-weight: 700;
+  line-height: 29.42px;
+  text-align: center;
+}
+
+.city:nth-child(1n) > div,
+.city:nth-child(8n) > div {
+  background-color: #037ef3;
+}
+
+.city:nth-child(2n) > div,
+.city:nth-child(9n) > div {
+  background-color: #f35208;
+}
+
+.city:nth-child(3n) > div,
+.city:nth-child(10n) > div {
+  background-color: #fcc54c;
+}
+
+.city:nth-child(4n) > div,
+.city:nth-child(11n) > div {
+  background-color: #7b49e8;
+}
+
+.city:nth-child(5n) > div,
+.city:nth-child(12n) > div {
+  background-color: #db0e65;
+}
+
+.city:nth-child(6n) > div,
+.city:nth-child(13n) > div {
+  background-color: #f55007;
+}
+
+.city:nth-child(7n) > div {
+  background-color: #00c16e;
+}
+
+@keyframes scrollInfinity {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scrollInfinity2 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}

@@ -21,10 +21,10 @@
   color: #ffffff;
 }
 
-.primary:hover {
+/* .primary:hover {
   background-color: var(--hoverPrimaryBlue);
   color: #ffffff;
-}
+} */
 
 .secondary {
   background: #1a171712;

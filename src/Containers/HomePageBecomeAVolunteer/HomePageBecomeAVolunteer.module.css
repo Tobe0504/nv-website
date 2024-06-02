@@ -1,0 +1,45 @@
+.container {
+  padding: 72px 120px;
+}
+
+.infoSection {
+  margin-top: 72px;
+  display: flex;
+  align-items: center;
+}
+
+.infoSection > div:nth-child(1) {
+  width: 441px;
+  flex-basis: 441px;
+}
+
+.infoSection > div:nth-child(1) > img {
+  width: 100%;
+  height: 605px;
+  border-radius: 32px 0px 0px 32px;
+}
+
+.infoSection > div:nth-child(2) {
+  padding: 83px 124px;
+  background: #ffffff;
+  flex: 1;
+}
+
+.infoSection > div:nth-child(2) > p {
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: justified;
+  color: #000000;
+  padding: 1rem 0;
+}
+
+.infoSection > div:nth-child(2) > p:nth-child(1) {
+  border-bottom: 1px solid #202020;
+}
+
+.infoSection > div:nth-child(2) > button {
+  margin-top: 4rem;
+  width: 248px;
+}
