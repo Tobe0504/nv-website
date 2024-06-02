@@ -17,7 +17,9 @@ const Header = () => {
       <img
         src="/Assets/logo.svg"
         alt="NV Logo"
-        onClick={() => [navigate("/")]}
+        onClick={() => {
+          navigate("/");
+        }}
       />
       {routes.map((data, i) => {
         return (
@@ -49,7 +51,11 @@ const Header = () => {
         </svg>
       </div>
 
-      <Button>
+      <Button
+        onClick={() => {
+          navigate("/sign-up");
+        }}
+      >
         <span>Become a volunteer</span>
         <svg
           width="13"

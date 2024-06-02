@@ -7,6 +7,7 @@ type ButtonPropTypes = {
   disabled?: boolean;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
   loading?: boolean;
+  noRadius?: boolean;
 };
 
 const Button = ({
@@ -15,6 +16,7 @@ const Button = ({
   disabled,
   onClick,
   loading,
+  noRadius,
 }: ButtonPropTypes) => {
   return (
     <button
@@ -27,6 +29,7 @@ const Button = ({
       }`}
       onClick={onClick}
       disabled={loading || disabled}
+      style={noRadius ? { borderRadius: "0px" } : undefined}
     >
       {loading ? <CircularProgress size="1.5rem" color="inherit" /> : children}
     </button>

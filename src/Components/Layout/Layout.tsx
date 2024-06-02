@@ -4,18 +4,21 @@ import classes from "./Layout.module.css";
 
 type LayoutProps = {
   children: React.ReactNode;
+  noFooter?: boolean;
 };
 
-const Layout = ({ children }: LayoutProps) => {
+const Layout = ({ children, noFooter }: LayoutProps) => {
   return (
     <section className={classes.container}>
       <section className={classes.header}>
         <Header />
       </section>
       <section className={classes.body}>{children}</section>
-      <section className={classes.footer}>
-        <Footer />
-      </section>
+      {!noFooter && (
+        <section className={classes.footer}>
+          <Footer />
+        </section>
+      )}
     </section>
   );
 };

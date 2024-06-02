@@ -1,23 +1,23 @@
 import HeaderText from "../../Components/HeaderText/HeaderText";
 import classes from "./HomepageStates.module.css";
 
-const HomepageStates = () => {
-  const cities = [
-    "Benue",
-    "Cross-River",
-    "Edo",
-    " Enugu",
-    "Kwara",
-    "Lagos",
-    "Ogun",
-    "Ondo",
-    "Osun",
-    "Oyo",
-    "Plateau",
-    "Rivers",
-    "FCT",
-  ];
+export const cities = [
+  "Benue",
+  "Cross-River",
+  "Edo",
+  " Enugu",
+  "Kwara",
+  "Lagos",
+  "Ogun",
+  "Ondo",
+  "Osun",
+  "Oyo",
+  "Plateau",
+  "Rivers",
+  "FCT",
+];
 
+const HomepageStates = () => {
   const citiesInfinite = [...cities, ...cities];
 
   return (
