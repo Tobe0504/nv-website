@@ -58,3 +58,79 @@
   color: #000000;
   margin-bottom: 2rem;
 }
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 20px;
+    height: 100%;
+  }
+
+  .topSection {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 30px;
+  }
+
+  .topSection > div {
+    height: 150px;
+    padding: 12px;
+  }
+
+  .topSection > div:nth-child(1) > h4 {
+    font-size: 30px;
+    line-height: 150%;
+  }
+
+  .topSection > div:nth-child(2) > h4 {
+    font-size: 30px;
+    line-height: 150%;
+  }
+
+  .bottomSection > img {
+    margin-bottom: 30px;
+  }
+
+  .bottomSection > p {
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 20px;
+    height: 100%;
+  }
+
+  .topSection {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 30px;
+  }
+
+  .topSection > div {
+    height: 150px;
+    padding: 12px;
+  }
+
+  .topSection > div:nth-child(1) > h4 {
+    font-size: 30px;
+    line-height: 150%;
+  }
+
+  .topSection > div:nth-child(2) > h4 {
+    font-size: 30px;
+    line-height: 150%;
+  }
+
+  .bottomSection > img {
+    margin-bottom: 30px;
+  }
+
+  .bottomSection > p {
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 1rem;
+  }
+}

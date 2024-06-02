@@ -25,7 +25,7 @@
   text-decoration: none;
 }
 
-.container > div {
+.container > div:not(.sideNav) {
   background: #1a171712;
   display: flex;
   align-items: center;
@@ -52,4 +52,69 @@
   text-align: left;
   color: #2d2d2d;
   text-decoration: none;
+}
+
+.sidenavButton {
+  display: none;
+  margin-left: auto;
+}
+
+.sideNav {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 20;
+  background-color: #fff;
+  overflow: hidden;
+  width: 0;
+  transition: 0.3s;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    height: 80px;
+    gap: 1rem;
+    padding: 0.5rem 28px;
+  }
+
+  .container > img {
+    width: 124px;
+    height: 41px;
+  }
+
+  .container > a:not(.active),
+  .container > div:not(.sideNav),
+  .container > button,
+  .active {
+    display: none;
+  }
+
+  .sidenavButton {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    height: 80px;
+    gap: 1rem;
+    padding: 0.5rem 28px;
+  }
+
+  .container > img {
+    width: 124px;
+    height: 41px;
+  }
+
+  .container > a:not(.active),
+  .container > div:not(.sideNav),
+  .container > button,
+  .active {
+    display: none;
+  }
+
+  .sidenavButton {
+    display: block;
+  }
 }

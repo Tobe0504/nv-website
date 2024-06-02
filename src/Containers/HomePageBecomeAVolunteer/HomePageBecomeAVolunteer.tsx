@@ -1,8 +1,13 @@
+import { useNavigate } from "react-router";
 import Button from "../../Components/Button/Button";
 import HeaderText from "../../Components/HeaderText/HeaderText";
+import { scrollToTheTop } from "../../HelperFunctions/scrollToTop";
 import classes from "./HomePageBecomeAVolunteer.module.css";
 
 const HomePageBecomeAVolunteer = () => {
+  // Router
+  const navigate = useNavigate();
+
   return (
     <div className={classes.container}>
       <HeaderText
@@ -31,7 +36,12 @@ const HomePageBecomeAVolunteer = () => {
             the country. 
           </p>
 
-          <Button>
+          <Button
+            onClick={() => {
+              navigate("/sign-up");
+              scrollToTheTop();
+            }}
+          >
             <span>Here is how</span>
             <svg
               width="13"

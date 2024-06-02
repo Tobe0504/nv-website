@@ -12,7 +12,7 @@ const StatesForm = () => {
   const { city } = useParams();
   const navigate = useNavigate();
 
-  const [projects, setProjects] = useState([
+  const [projects] = useState([
     {
       title: "Building Healthier Communities",
       description:

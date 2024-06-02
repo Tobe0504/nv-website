@@ -41,3 +41,61 @@
 .bottomSection > img {
   width: 100%;
 }
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    min-height: auto;
+    padding: 20px 67px;
+  }
+
+  .upperSection {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-direction: column;
+  }
+
+  .upperSection > div > h4 {
+    font-size: 20px;
+    line-height: 130.5%;
+    text-align: center;
+  }
+
+  .upperSection > div > p {
+    font-size: 16px;
+    font-weight: 275;
+    line-height: 140%;
+  }
+
+  .upperSection > button {
+    width: 220px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    min-height: auto;
+    padding: 20px 67px;
+  }
+
+  .upperSection {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-direction: column;
+  }
+
+  .upperSection > div > h4 {
+    font-size: 20px;
+    line-height: 130.5%;
+    text-align: center;
+  }
+
+  .upperSection > div > p {
+    font-size: 16px;
+    font-weight: 275;
+    line-height: 140%;
+  }
+
+  .upperSection > button {
+    width: 220px;
+  }
+}

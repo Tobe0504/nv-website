@@ -1,8 +1,12 @@
+import { useNavigate } from "react-router";
 import Button from "../../Components/Button/Button";
 import HeaderText from "../../Components/HeaderText/HeaderText";
+import { scrollToTheTop } from "../../HelperFunctions/scrollToTop";
 import classes from "./HomePageImpactWithOthers.module.css";
 
 const HomePageImpactWithOthers = () => {
+  // Router
+  const navigate = useNavigate();
   return (
     <div className={classes.container}>
       <div className={classes.upperSection}>
@@ -40,7 +44,12 @@ const HomePageImpactWithOthers = () => {
             version of yourself, and volunteering is one of those ways.
           </p>
 
-          <Button>
+          <Button
+            onClick={() => {
+              navigate("/projects");
+              scrollToTheTop();
+            }}
+          >
             <span>View projects</span>
             <svg
               width="13"

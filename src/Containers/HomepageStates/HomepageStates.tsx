@@ -18,7 +18,7 @@ export const cities = [
 ];
 
 const HomepageStates = () => {
-  const citiesInfinite = [...cities, ...cities];
+  const citiesInfinite = [...cities];
 
   return (
     <div className={classes.container}>

@@ -90,3 +90,117 @@
 .lowerSection > div:nth-child(2) > form > button {
   margin-top: 100px;
 }
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    min-height: calc(100vh - 80px);
+    overflow-y: auto;
+  }
+
+  .upperSection {
+    padding: 0 20px;
+    flex-basis: 160px;
+  }
+
+  .upperSection > h4,
+  .upperSection > h4 > span {
+    font-family: Lato;
+    font-size: 20px;
+    line-height: 130.5%;
+  }
+
+  .lowerSection {
+    flex-basis: auto;
+    max-height: 3000px;
+    flex-direction: column;
+  }
+
+  .lowerSection > div {
+    flex-basis: auto;
+    width: 100%;
+  }
+
+  .lowerSection > div:nth-child(1) {
+    background: #08841b;
+    padding: 34px 27px;
+  }
+
+  .lowerSection > div:nth-child(1) > p,
+  .lowerSection > div:nth-child(1) > i {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+  }
+
+  .lowerSection > div:nth-child(2) {
+    padding: 34px 27px;
+  }
+
+  .lowerSection > div:nth-child(2) > form > h4 {
+    color: #000;
+    font-size: 20.381px;
+    line-height: normal;
+  }
+
+  .lowerSection > div:nth-child(2) > form > button {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    min-height: calc(100vh - 80px);
+    overflow-y: auto;
+  }
+
+  .upperSection {
+    padding: 0 20px;
+    flex-basis: 160px;
+  }
+
+  .upperSection > h4,
+  .upperSection > h4 > span {
+    font-family: Lato;
+    font-size: 20px;
+    line-height: 130.5%;
+  }
+
+  .lowerSection {
+    flex-basis: auto;
+    max-height: 3000px;
+    flex-direction: column;
+  }
+
+  .lowerSection > div {
+    flex-basis: auto;
+    width: 100%;
+  }
+
+  .lowerSection > div:nth-child(1) {
+    background: #08841b;
+    padding: 34px 27px;
+  }
+
+  .lowerSection > div:nth-child(1) > p,
+  .lowerSection > div:nth-child(1) > i {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+  }
+
+  .lowerSection > div:nth-child(2) {
+    padding: 34px 27px;
+  }
+
+  .lowerSection > div:nth-child(2) > form > h4 {
+    color: #000;
+    font-size: 20.381px;
+    line-height: normal;
+  }
+
+  .lowerSection > div:nth-child(2) > form > button {
+    margin-top: 100px;
+  }
+}

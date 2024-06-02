@@ -1,16 +1,35 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Button from "../../Components/Button/Button";
 import classes from "./Header.module.css";
+import MenuIcon from "@mui/icons-material/Menu";
+import HeaderSideNav from "../HeaderSideNav/HeaderSideNav";
+import { useRef } from "react";
+
+export const routes = [
+  { title: "About", route: "/about" },
+  { title: "Projects", route: "/projects" },
+];
 
 const Header = () => {
-  const routes = [
-    { title: "About", route: "/about" },
-    { title: "Projects", route: "/projects" },
-  ];
-
   // Routeer
   const location = useLocation();
   const navigate = useNavigate();
+
+  // Refs
+  const sideNav = useRef<null | HTMLDivElement>(null);
+
+  // Utils
+  const openSideNav = () => {
+    if (sideNav.current) {
+      sideNav.current.style.width = "100%";
+    }
+  };
+
+  const closeSideNav = () => {
+    if (sideNav.current) {
+      sideNav.current.style.width = "0%";
+    }
+  };
 
   return (
     <div className={classes.container}>
@@ -70,6 +89,14 @@ const Header = () => {
           />
         </svg>
       </Button>
+
+      <span className={classes.sidenavButton} onClick={openSideNav}>
+        <MenuIcon />
+      </span>
+
+      <div className={classes.sideNav} ref={sideNav}>
+        <HeaderSideNav closeSideNav={closeSideNav} />
+      </div>
     </div>
   );
 };

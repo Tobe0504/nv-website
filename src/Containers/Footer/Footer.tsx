@@ -1,12 +1,22 @@
+import { useNavigate } from "react-router";
 import Button from "../../Components/Button/Button";
+import { scrollToTheTop } from "../../HelperFunctions/scrollToTop";
 import classes from "./Footer.module.css";
 
 const Footer = () => {
+  // Router
+  const navigate = useNavigate();
+
   return (
     <div className={classes.container}>
       <div className={classes.upperSection}>
         <h1>Become a Volunteer</h1>
-        <Button>
+        <Button
+          onClick={() => {
+            navigate("/sign-up");
+            scrollToTheTop();
+          }}
+        >
           <span>Start Now</span>
           <svg
             width="21"

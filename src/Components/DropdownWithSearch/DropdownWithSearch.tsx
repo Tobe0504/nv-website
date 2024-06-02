@@ -59,13 +59,7 @@ const DropdownWithSearch = (props: DropdownProps) => {
         }}
         tabIndex={0}
       >
-        <svg
-          width="38"
-          height="38"
-          viewBox="0 0 38 38"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="38" height="38" rx="13.3" fill="black" />
           <path
             fillRule="evenodd"
@@ -77,8 +71,6 @@ const DropdownWithSearch = (props: DropdownProps) => {
 
         <span>{props?.selected || props?.title}</span>
         <svg
-          width="20"
-          height="13"
           viewBox="0 0 20 13"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

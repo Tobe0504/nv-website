@@ -1,7 +1,11 @@
+import { useNavigate } from "react-router";
 import Button from "../../Components/Button/Button";
+import { scrollToTheTop } from "../../HelperFunctions/scrollToTop";
 import classes from "./HomePageHeroSection.module.css";
 
 const HomePageHeroSection = () => {
+  // Navigate
+  const navigate = useNavigate();
   return (
     <div className={classes.container}>
       <div className={classes.upperSection}>
@@ -10,7 +14,12 @@ const HomePageHeroSection = () => {
           <p>Volunteer and change lives</p>
         </div>
 
-        <Button>
+        <Button
+          onClick={() => {
+            navigate("/sign-up");
+            scrollToTheTop();
+          }}
+        >
           <span>Become a volunteer</span>
           <svg
             width="16"

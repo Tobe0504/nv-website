@@ -2,7 +2,6 @@ import { Route, Routes } from "react-router-dom";
 import AboutPage from "./Containers/AboutPage/AboutPage";
 import HomePage from "./Containers/HomePage/HomePage";
 import ProjectsPage from "./Containers/ProjectsPage/ProjectsPage";
-import FormLayout from "./Components/FormLayout/FormLayout";
 import SignUp from "./Containers/SignUp/SignUp";
 import StatesForm from "./Containers/StatesForm/StatesForm";
 

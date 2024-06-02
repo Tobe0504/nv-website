@@ -24,3 +24,33 @@
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 28px;
+  }
+
+  .container > div {
+    flex-basis: 100%;
+    max-width: 100%;
+    min-height: 341px;
+    font-family: Lato;
+    font-size: 20px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 28px;
+  }
+
+  .container > div {
+    flex-basis: 100%;
+    max-width: 100%;
+    min-height: 341px;
+    font-family: Lato;
+    font-size: 20px;
+    border-radius: 20px;
+  }
+}
