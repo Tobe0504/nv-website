@@ -4,6 +4,7 @@ import HomePage from "./Containers/HomePage/HomePage";
 import ProjectsPage from "./Containers/ProjectsPage/ProjectsPage";
 import FormLayout from "./Components/FormLayout/FormLayout";
 import SignUp from "./Containers/SignUp/SignUp";
+import StatesForm from "./Containers/StatesForm/StatesForm";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route path="/about" element={<AboutPage />} />
       <Route path="/projects" element={<ProjectsPage />} />
       <Route path="/sign-up" element={<SignUp />} />
+      <Route path="/sign-up/:city" element={<StatesForm />} />
     </Routes>
   );
 }

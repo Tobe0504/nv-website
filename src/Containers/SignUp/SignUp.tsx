@@ -1,11 +1,18 @@
+import { useState } from "react";
+import { useNavigate } from "react-router";
 import Button from "../../Components/Button/Button";
 import DropdownMain from "../../Components/DropdownMain/DropdownMain";
 import FormLayout from "../../Components/FormLayout/FormLayout";
 import Input from "../../Components/Input/Input";
 import { cities } from "../HomepageStates/HomepageStates";
-import classes from "./SignUp.module.css";
 
 const SignUp = () => {
+  // States
+  const [city, setCity] = useState("");
+
+  //   Router
+  const navigate = useNavigate();
+
   return (
     <FormLayout>
       <form>
@@ -43,9 +50,21 @@ const SignUp = () => {
           options={[...cities]}
           title="Select"
           label="Location of your preferred project"
+          selected={city}
+          setSelected={setCity}
         />
 
-        <Button noRadius>Next</Button>
+        <Button
+          noRadius
+          onClick={() => {
+            if (city) {
+              navigate(`/sign-up/${city?.replace(" ", "-")?.toLowerCase()}`);
+            }
+          }}
+          disabled={!city}
+        >
+          Next
+        </Button>
       </form>
     </FormLayout>
   );

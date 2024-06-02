@@ -5,7 +5,7 @@ export const cities = [
   "Benue",
   "Cross-River",
   "Edo",
-  " Enugu",
+  "Enugu",
   "Kwara",
   "Lagos",
   "Ogun",

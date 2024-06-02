@@ -47,6 +47,8 @@ const Input = ({
           {isRequired && <span>*</span>}
         </>
       )}
+
+      {tip && <span className={classes.tip}>{tip}</span>}
       <span className={classes.input}>
         <input
           type={
@@ -84,7 +86,6 @@ const Input = ({
           {errorMessage || "*invalid"}{" "}
         </span>
       )}
-      {tip && <span className={classes.tip}>{tip}</span>}
     </div>
   );
 };

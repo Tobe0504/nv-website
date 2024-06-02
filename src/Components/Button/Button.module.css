@@ -27,12 +27,16 @@
 } */
 
 .secondary {
-  background: #1a171712;
+  background: #fff;
+  color: #08841b;
+  border: 1px solid #08841b;
 }
 
 .primary:disabled,
 .tertiary:disabled {
-  background-color: var(--disabled);
+  background-color: #b9b9b9;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 
 @media screen and (min-width: 767px) and (max-width: 1023px) {
